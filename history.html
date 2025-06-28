@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education History - Fathul Amin</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.about {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #ff6b00;
+  object-fit: cover;
+}
+
+.about h2 {
+  color: #ffb84d;
+  margin-top: 15px;
+}
+
+.about p {
+  color: #ccc;
+  font-size: 0.95rem;
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+.education-section {
+  margin-top: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  border-left: 4px solid #ff6b00;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 107, 0, 0.15);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.edu-item:nth-child(1) { animation-delay: 0.2s; }
+.edu-item:nth-child(2) { animation-delay: 0.4s; }
+.edu-item:nth-child(3) { animation-delay: 0.6s; }
+.edu-item:nth-child(4) { animation-delay: 0.8s; }
+.edu-item:nth-child(5) { animation-delay: 1s; }
+.edu-item:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.edu-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.edu-info h3 {
+  color: #ffb84d;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.edu-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.menu a button {
+  background: #ff6b00;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu a button:hover {
+  background: #e65c00;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .edu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-item img {
+    margin-bottom: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AMIN</div>
+  </header>
+
+  <section class="about">
+    <img src="foto pribadi.jpg" alt="Foto Profil">
+    <h2>Education History</h2>
+  </section>
+
+  <section class="education-section">
+
+    <div class="edu-item">
+      <img src="kampus.png">
+      <div class="edu-info">
+        <h3>UNIVERSITAS TRUNOJOYO MADURA</h3>
+        <p>Informatics Engineering</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="sma.png">
+      <div class="edu-info">
+        <h3>SMA KHAIRUL ULUM</h3>
+        <p>Science</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="mts.png">
+      <div class="edu-info">
+        <h3>MTS KHAIRUL ULUM</h3>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="Al-Amien-Prenduan.png">
+      <div class="edu-info">
+        <h3>TMI AL AMIEN PRENDUAN</h3>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="sd.png">
+      <div class="edu-info">
+        <h3>SDN TAMBELANGAN 1</h3>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="tk.webp">
+      <div class="edu-info">
+        <h3>TK BINA ANAPRASA</h3>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="menu">
+    <a href="index.html"><button>About</button></a>
+    <a href="galery.html"><button>Gallery</button></a>
+  </div>
+
+  <footer>
+    ©2025 - by Fathul Amin - All Rights Reserved
+  </footer>
+
+</body>
+</html>

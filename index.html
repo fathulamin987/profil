@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Fathul Amin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #f1f1f1;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      color: #ff6b00;
+      font-weight: bold;
+    }
+
+    .about {
+      margin-top: 30px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .about img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #ff6b00;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+      animation: popUp 1.3s ease;
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .about h2 {
+      color: #ffb84d;
+      margin-top: 15px;
+      animation: fadeIn 1.4s ease-in-out;
+    }
+
+    .about p {
+      color: #ccc;
+      font-size: 0.95rem;
+      max-width: 450px;
+      margin: 10px auto;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .social-media {
+      text-align: center;
+      margin: 30px 0;
+      animation: fadeIn 1.6s ease-in-out;
+    }
+
+    .social-media h3 {
+      color: #ffb84d;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .icon-wrapper {
+      width: 60px;
+      height: 60px;
+      background: #1e1e1e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 5px #000;
+    }
+
+    .icon-wrapper:hover {
+      transform: scale(1.2) rotate(5deg);
+      box-shadow: 0 0 20px #ff6b00;
+      background: #2a2a2a;
+    }
+
+    .icon-wrapper img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      animation: fadeIn 1.7s ease-in-out;
+    }
+
+    .menu button {
+      background: #ff6b00;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu button:hover {
+      background: #e65c00;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 40px;
+      animation: fadeIn 1.8s ease-in-out;
+    }
+
+    @media (max-width: 600px) {
+      .icon-wrapper {
+        width: 50px;
+        height: 50px;
+      }
+
+      .icon-wrapper img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AMIN</div>
+  </header>
+
+  <section class="about">
+    <img src="foto pribadi.jpg" alt="Foto Profil">
+    <h2>About Me</h2>
+    <p>I'm Fathul Amin, an Informatics Engineering student and active Scout. Passionate about technology and
+      self-growth.</p>
+  </section>
+
+  <section class="social-media">
+    <h3>FOLLOW ME</h3>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/fathul.amin_" target="_blank" class="icon-wrapper">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://youtube.com/@fathul_amin" target="_blank" class="icon-wrapper">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      </a>
+      <a href="https://www.tiktok.com/@fathul.amin_" target="_blank" class="icon-wrapper">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+    </div>
+  </section>
+
+  <div class="menu">
+    <a href="galery.html">
+      <button>Gallery</button>
+    </a>
+    <a href="history.html">
+      <button>Education History</button>
+    </a>
+  </div>
+
+  <footer>
+    ©2025 - by Fathul Amin - All Rights Reserved
+  </footer>
+
+</body>
+</html>
